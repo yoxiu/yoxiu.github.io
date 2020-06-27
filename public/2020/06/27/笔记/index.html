@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"save":"auto"},"fancybox":false,"lazyload":false,"pangu":false,"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="面向对象笔记面向对象：把相关数据和方法组织为一个整体。关注的是结果，不是过程。相对面向过程，面向对象，是从执行者到指挥者的转变。 面向对象三大思想：面向对象思想从概念上讲分为以下三种：OOA、OOD、OOPOOA：面向对象分析（Object Oriented Analysis）OOD：面向对象设计（Object Oriented Design）OOP：面向对象程序（Object Oriented">
+<meta property="og:type" content="article">
+<meta property="og:title" content=" 笔记">
+<meta property="og:url" content="http://yoursite.com/2020/06/27/%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Tea">
+<meta property="og:description" content="面向对象笔记面向对象：把相关数据和方法组织为一个整体。关注的是结果，不是过程。相对面向过程，面向对象，是从执行者到指挥者的转变。 面向对象三大思想：面向对象思想从概念上讲分为以下三种：OOA、OOD、OOPOOA：面向对象分析（Object Oriented Analysis）OOD：面向对象设计（Object Oriented Design）OOP：面向对象程序（Object Oriented">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-27T10:13:04.000Z">
+<meta property="article:modified_time" content="2020-06-27T10:26:56.000Z">
+<meta property="article:author" content="红茶">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2020/06/27/%E7%AC%94%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title> 笔记 | Tea</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Tea</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <a>
+        <img class="custom-logo-image" src="[object Object]" alt="Tea">
+      </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/27/%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="红茶">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tea">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+           笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-06-27 18:13:04 / 修改时间：18:26:56" itemprop="dateCreated datePublished" datetime="2020-06-27T18:13:04+08:00">2020-06-27</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="面向对象笔记"><a href="#面向对象笔记" class="headerlink" title="面向对象笔记"></a>面向对象笔记</h1><p>面向对象：<br>把相关数据和方法组织为一个整体。<br>关注的是结果，不是过程。<br>相对面向过程，面向对象，是从执行者到指挥者的转变。</p>
+<p>面向对象三大思想：<br>面向对象思想从概念上讲分为以下三种：OOA、OOD、OOP<br>OOA：面向对象分析（Object Oriented Analysis）<br>OOD：面向对象设计（Object Oriented Design）<br>OOP：面向对象程序（Object Oriented Programming</p>
+<p>面向对象三大特征：<br>封装性：所有的内容对外部不可见<br>继承性：将其他的功能继承下来继续发展<br>多态性：方法的重载本身就是一个多态性的体现</p>
+<p>类与对象的关系：<br>类有属性与方法，属性是特征，方法是一个个行为。<br>类（共性有什么） ===》对象（赋予个性）<br>图纸 ===》汽车</p>
+<p>一个.java文件可以有N个类，但只能有一个public修饰的类，且文件名称必须与该类名称一致。因为这个类作为整个文件对外的公共类存在，一个文件只能有一个主的类存在。</p>
+<a id="more"></a>
+
+<p>对象创建时的内存细节：<br>java中一个线程就会有一个栈。<br>栈存储快的原因：栈通过移动指针来决定创建空间和释放空间，速度很快，<br>不好的一点是必须明确每一次移动的大小，限制存储灵活性导致某些数据无法存储。<br>更大的数据建议存储在堆内存。堆存放引用数据类型。</p>
+<p>Java是一个纯面向对象语言, 限制了对象的创建方式: 所有类的对象都是通过new关键字创建 。<br>new关键字, 是指告诉JVM , 需要明确的去创建一个新的对象 , 去开辟一块新的堆内存空间。<br>堆内存与栈内存不同, 优点在于我们创建对象时 , 不必关注堆内存中需要开辟多少存储空间 , 也不需要关注内存占用时长。<br>当栈内存中不存在此对象的引用时,则视其为垃圾 , 等待垃圾回收器回收。</p>
+<p>PC寄存器：保存的是 当前正在执行的 JVM指令的 地址 ! 在Java程序中, 每个线程启动时, 都会创建一个PC寄存器。<br>本地方法栈：保存本地(native)方法的地址。<br>方法区：<br>存放的是：类信息 - 静态的变量 - 常量 - 成员方法<br>方法区中包含了一个特殊的区域 ( 常量池 )(存储的是使用static修饰的成员)</p>
+<p>构造方法：<br>定义的格式:<br>与普通方法基本相同, 区别在于: 方法名称必须与类名相同, 没有返回值类型的声明。<br>Person p = new Person(); 在右侧Person后面出现的小括号, 其实就是在调用构造方法。<br>作用：用于对象初始化。<br>执行时机： 在创建对象时,自动调用。<br>特点：所有的Java类中都会至少存在一个构造方法。<br>如果一个类中没有明确的编写构造方法, 则编译器会自动生成一个无参的构造方法, 构造方法中没有 任何的代码！ 如果自行编写了任意一个构造器, 则编译器不会再自动生成无参的构造方法。<br>构造方法设计：<br>建议自定义无参构造方法，不要对编译器形成依赖，避免错误发生。<br>当类中有非常量成员变量时，建议提供两个版本的构造方法，一个是无参构造方法，一个是全属性做参数的构造方法。<br>当类中所有成员变量都是常量或者没有成员变量时，建议不提供任何版本的构造。</p>
+<p>重载：<br>不同类型的参数顺序不同也构成重载。<br>方法的重载与返回值无关。<br>方法名称相同, 参数类型或参数长度不同, 可以完成方法的重载 !</p>
+<p>构造方法的重载：<br>构造方法的重载 ,可以让我们在不同的创建对象的需求下, 调用不同的方法来完成对象的初始化。<br>一个类, 可以存在多个构造方法 : 参数列表的长度或类型不同即可完成构造方法的重载。</p>
+<p>匿名对象：<br>如果对象使用两次或以上不能使用匿名对象。<br>匿名对象只能使用一次，因为没有任何的对象引用，所以将称为垃圾，等待被GC回收。</p>
+<p>this：<br>this 表示当前对象，相当于p1、p2，能通过p1、p2调用的都能通过this调用。<br>this在一个构造方法中，调用另一个构造方法时，调用的代码必须编写在构造方法的第一行。因为调用另一个构造方法时，对象还没有初始化完毕，初始化完后才能执行某些逻辑。</p>
+<p>Static ：可以通过类名去进行访问<br>可以理解为图纸的属性，比如图纸被使用了多少次。<br>static表示“静态”的意思，可以用来修饰成员变量和成员方法(后续还会学习静态 代码块 和 静态内部类)。还可以用来静态导包。</p>
+<p>static的主要作用在于创建独立于具体对象的域变量或者方法。<br>简单理解： 被static关键字修饰的方法或者变量不需要依赖于对象来进行访问，只要类被加载了，就可以通过类名去进行访问。 并且不会因为对象的多次创建 而在内存中建立多份数据。<br>1.静态成员 在类加载时加载并初始化。<br>2.无论一个类存在多少个对象 , 静态的属性, 永远在内存中只有一份( 可以理解为所有对象公用 )<br>3.在访问时： 静态不能访问非静态 , 非静态可以访问静态<br>静态的方法被调用时可能对象还没创建。静态资源不能访问非静态资源。</p>
+<p>包：<br>1、把功能相似或相关的类或接口组织在同一个包中，方便类的查找和使用。<br>2、包如同文件夹一样，不同的包中的类的名字是可以相同的，当同时调用两个不同包中相同类名的类时，应该加上包名 加以区别。因此，包可以避免名字冲突。<br>3、包也限定了访问权限，拥有包访问权限的类才能访问某个包中的类。</p>
+<p>包的使用规则：<br>包中java文件的定义： 在.java文件的首部， 必须编写类所属哪个包， 格式： package 包名; - 包的定义： 通常由多个单词组成， 所有单词的字母小写， 单词与单词之间使用.隔开 ，一般命名为“com.公司名.项目名.模块名….”。<br>规范由来： 由于Java面向对象的特性，每名Java开发人员都可以编写属于自己的Java Package，为了保障每个Java Package命名的唯一性，在最新的Java编程规范中，要求开发人员在自己定义的包名前加上唯一的前缀。由于互联网上 的域名称是不会重复的，所以多数开发人员采用自己公司在互联网上的域名称作为自己程序包的唯一前缀。例如： com.java.xxx</p>
+<p>权限修饰符：<br>修饰 属性、方法、构造方法……</p>
+<p>默认是同胞可访问，不同包不能访问。<br>Protected 是同包或子类可访问。</p>
+<p>构造代码块：<br>对象创建时执行,且执行在构造方法之前。<br>构造方法不一定执行（可能会重载）</p>
+<p>静态代码块：<br>随着类的加载（第一次使用）执行，只有一次。<br>唯一资源的操作放在静态代码块，资源不会被重复加载。</p>
+<p>代码块执行顺序：<br>静态代码块（类加载到内存时）&gt; 构造代码块 &gt; 构造方法</p>
+<p>java中只有单继承和多重继承，没有多继承。</p>
+<p>当创建子类对象时，首先创建它的父类对象，创建完毕再创建自己，父类作为自己的super部分存在。</p>
+<p>继承 子类拥有了父类的地址／引用／对象名称。<br>super 关键字：<br>就像一个变量，就像一个对象的名称<br>访问父类的构造方法；父类的属性、方法。<br>在子类中super表示那个自动被创建的父类对象。子类创建多少个，就有多少被创建的父类对象。<br>调用super构造方法的代码，必须写在子类构造方法的第一行。没有构造之前什么都没有，所以要放在第一行。</p>
+<p>重写：<br>1.参数列表必须与被重写的方法相同。<br>2.返回类型必须与被重写方法的返回类型相同。<br>3.访问权限不能比父类中被重写的方法的访问权限更低。<br>4.父类的成员方法只能被子类重写。<br>5.声明为static和private的方法不能被重写，但是能够被再次声明。</p>
+<p>重载： 重写 ：<br>发生在一个类中 子父类中<br>参数列表必须不同 必须相同<br>与返回值 类型无关 必须一致<br>访问权限 无关 子&gt;=父类<br>异常处理 无关 异常范围可以更小，但不能抛出新的异常<br>final：<br>修饰 属性、变量：<br>变量、属性 成为了常量，无法对其再次进行赋值。<br>final 修饰的局部变量，只能赋值一次，（可以先声明后赋值）<br>final 修饰的成员属性，必须在声明时赋值。</p>
+<p>全局常量（使用public static final 这三个关键字进行声明）</p>
+<p>修饰 类、方法：<br>final修饰的类，不可被继承。<br>final修饰的方法，不能被子类继承。</p>
+<p>抽象类：<br>一个类中有抽象方法。且该类用abstract 修饰。<br>抽象类描述的行为是模糊的，不确定的。<br>图纸画一半，有的不确定，<br>必须把不确定的部分明确，通过创建子类把抽象的确定了称为实现父类的抽象方法。（重写抽象类的全部抽象方法）<br>抽象方法：<br>没有“{}”方法体的方法，且用abstract 修饰。（只声明而未实现的方法）</p>
+<p>抽象类和普通类的区别：<br>抽象类必须用public或protected修饰，抽象类默认缺省为public。<br>抽象类不能通过new直接创建对象，（JVM限制了开发者，子类创建对象时，抽象父类会被JVM实例化。）<br>如果一个子类继承抽象类，那么必须实现其所有的抽象方法。如果有未实现的抽象方法，那么子类也必须定义为 abstract类。<br>抽象类能否有构造方法？ 能有构造方法，子类对象实例化的时候的流程与普通类的继承是一样的，都是要先调用父类中的构造方法（默认是无参的），之后再调用子类自己的构造方法。</p>
+<p>接口：<br>如果一个类中的全部方法都是抽象方法，全部属性都是全局常量，那么此时就可以将这个类定义成一个接口。<br>接口只能有抽象方法和全局常量。（使用public static final 这三个关键字进行声明）<br>如果一个接口要想使用，必须依靠子类。 子类（如果不是抽象类的话）要实现接口中的所有抽象方法。<br>interface 接口名称{<br>全局常量 ;<br>抽象方法 ;<br>}<br>面向接口编程思想</p>
+<p>这种思想是接口是定义（规范，约束）与实现（名实分离的原则）的分离。<br>优点：<br>1、 降低程序的耦合性<br>2、 易于程序的扩展<br>3、 有利于程序的维护</p>
+<p>全局常量和抽象方法的简写<br>因为接口本身都是由全局常量和抽象方法组成 ， 所以接口中的成员定义可以简写：<br>1、全局常量编写时， 可以省略public static final 关键字，例如：<br>public static final String INFO = “内容” ;<br>简写后： String INFO = “内容” ; int a = 10;// final<br>2、抽象方法编写时， 可以省略 public abstract 关键字， 例如：<br>public abstract void print() ;<br>简写后： void print() ;</p>
+<p>接口可以多实现，如果一个类即要实现接口，又要继承抽象类的话：<br>class 子类 extends 父类 implements 父接口1,父接口2…{<br>}<br>因为接口都是抽象部分， 不存在具体的实现， 所以允许多继承：<br>interface C extends A,B{<br>}</p>
+<p>接口和抽象类的区别：<br>1、抽象类要被子类继承，接口要被类实现。<br>2、接口只能声明抽象方法，抽象类中可以声明抽象方法，也可以写非抽象方法。<br>3、接口里定义的变量只能是公共的静态的常量，抽象类中的变量是普通变量。<br>4、抽象类使用继承来使用， 无法多继承。 接口使用实现来使用， 可以多实现<br>5、抽象类中可以包含static方法 ，但是接口中不允许（静态方法不能被子类重写，因此接口中不能声明静态方法）<br>6、接口不能有构造方法，但是抽象类可以有</p>
+<p>多态：<br>对象的多种表现形式，（多种体现形态）<br>多态的体现：</p>
+<p>多态的使用：对象的类型转换<br>· 向上转型：将子类实例变为父类实例 |- 格式：父类 父类对象 = 子类实例 ；<br>· 向下转型：将父类实例变为子类实例 |- 格式：子类 子类对象 =（子类）父类实例 ；</p>
+<hr>
+<p>原网址: <a href="https://www.cnblogs.com/hongcha/articles/13182647.html" target="_blank" rel="noopener">访问</a></p>
+<p>创建于: 2020-06-27 18:14:31</p>
+<p>目录: study</p>
+<p>标签: <code>www.cnblogs.com</code></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/27/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/06/27/hexo/" rel="next" title="hexo">
+      hexo <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#面向对象笔记"><span class="nav-number">1.</span> <span class="nav-text">面向对象笔记</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">红茶</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">红茶</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
